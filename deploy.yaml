@@ -13,7 +13,7 @@ spec:
     - containerPort: 80
       protocol: TCP
    imagePullSecrets:
-    - name: acr-auth
+   - name: acr-auth
 ---
 apiVersion: apps/v1beta1
 kind: Deployment
@@ -39,7 +39,7 @@ spec:
         - containerPort: 80
           protocol: TCP
        imagePullSecrets:
-        - name: acr-auth
+       - name: acr-auth
 ---
 apiVersion: v1
 kind: Pod
